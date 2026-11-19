@@ -1,0 +1,100 @@
+﻿<svg width="100%" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Website Light Lavender-White Surface -->
+    <linearGradient id="heroSurface" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F5F2FF"/>
+      <stop offset="55%" stop-color="#FAF9FF"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+
+    <!-- Quantimite Signature Purple -> Blue Gradient -->
+    <linearGradient id="quantimiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <!-- Subtle Ambient Glow -->
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Architectural Micro-Grid -->
+    <pattern id="archGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1D0B3B" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .orbit-spin {
+      transform-origin: 960px 130px;
+      animation: spinSlow 24s linear infinite;
+    }
+    .orbit-reverse {
+      transform-origin: 960px 130px;
+      animation: spinReverse 18s linear infinite;
+    }
+    .signal-flow {
+      stroke-dasharray: 180;
+      stroke-dashoffset: 180;
+      animation: flowLine 3s ease-in-out infinite alternate;
+    }
+    .float-emblem {
+      animation: floatY 4.5s ease-in-out infinite;
+    }
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spinReverse {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes flowLine {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes floatY {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+
+  <!-- Base Card -->
+  <rect width="1200" height="260" rx="14" fill="url(#heroSurface)"/>
+  <rect width="1200" height="260" rx="14" fill="url(#archGrid)"/>
+  <rect x="0.5" y="0.5" width="1199" height="259" rx="13.5" stroke="#E2D9F3" stroke-width="1"/>
+
+  <!-- Top Gradient Accent Bar -->
+  <path d="M 14 0 L 1186 0" stroke="url(#quantimiteGrad)" stroke-width="4"/>
+
+  <!-- Ambient Right Orb -->
+  <circle cx="960" cy="130" r="150" fill="url(#orbGlow)"/>
+
+  <!-- Animated Architectural Telemetry Rings (Right Side) -->
+  <g opacity="0.85">
+    <circle class="orbit-spin" cx="960" cy="130" r="88" stroke="url(#quantimiteGrad)" stroke-width="1.5" stroke-dasharray="12 8 4 8"/>
+    <circle class="orbit-reverse" cx="960" cy="130" r="64" stroke="#6366F1" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="28 14"/>
+    
+    <!-- Center Quantimite Q-Arrow Mark -->
+    <g class="float-emblem" transform="translate(922, 92)">
+      <path d="M38 10 C20 10 6 24 6 42 C6 60 20 74 38 74 C47 74 55 70 61 64 L76 49 M60 49 L76 49 L76 65" stroke="url(#quantimiteGrad)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M38 21 C26 21 17 30 17 42 C17 54 26 63 38 63 C44 63 49 61 53 57 L68 42" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Animated Signal Connector -->
+  <path class="signal-flow" d="M 64 218 L 280 218 L 305 198 L 520 198" stroke="url(#quantimiteGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Top Eyebrow Pill -->
+  <rect x="64" y="34" width="218" height="26" rx="13" fill="#EDE9FE" stroke="#DDD6FE" stroke-width="1"/>
+  <circle cx="80" cy="47" r="4" fill="#9333EA"/>
+  <text x="92" y="51" fill="#5B21B6" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">QUANTIMITE ENGINEERING</text>
+
+  <!-- Main Headline Matching Website -->
+  <text x="64" y="114" fill="#1D0B3B" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">We engineer your</text>
+  <text x="64" y="162" fill="url(#quantimiteGrad)" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">next move.</text>
+
+  <!-- Subtitle Breadcrumb -->
+  <text x="64" y="196" fill="#64748B" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" letter-spacing="0.5">Software Architecture  •  UI/UX Design  •  Digital Growth  •  AI Systems</text>
+</svg>

@@ -1,57 +1,71 @@
-@'
-<div align="center">
-  <!-- Custom Animated Brand Banner -->
-  <img src="https://raw.githubusercontent.com/Quantimite/.github/main/assets/header-banner.svg" alt="Quantimite — We Engineer Your Next Move." width="100%" />
+﻿<div align="center">
+  <img src="../assets/hero-banner.svg" alt="Quantimite — We engineer your next move." width="100%" />
 
-  <br/>
+  <br/><br/>
 
-  <!-- Animated Typing Tagline -->
-  <a href="https://github.com/Quantimite">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=750&lines=A+Technology+%26+Digital+Growth+Partner+for+Ambitious+Businesses.;Full-Stack+Engineering+%7C+Product+Design+%7C+Growth+Systems.;Building+Purposeful%2C+Reliable%2C+and+Scalable+Digital+Products." alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=600&size=16&duration=3200&pause=1100&color=7C3AED&center=true&vCenter=true&width=760&lines=Digital+products%2C+software+solutions%2C+and+growth+strategies+for+ambitious+businesses.;Four+pillars.+One+team+that+ships.;Quality+by+Design+%E2%80%A2+Built+Around+People+%E2%80%A2+Made+to+Grow." alt="Quantimite Mission" />
 
-  <br/>
-
-  <!-- Status & Location Badges -->
   <p>
-    <img src="https://img.shields.io/badge/HQ-Sri_Lanka-0F172A?style=flat-square&logo=googlemaps&logoColor=A020F0" alt="Sri Lanka" />
-    <img src="https://img.shields.io/badge/Focus-Software_%26_Growth-0F172A?style=flat-square&logo=rocket&logoColor=38BDF8" alt="Focus" />
-    <img src="https://img.shields.io/badge/Engineering-Quality_by_Design-0F172A?style=flat-square&logo=checkmarx&logoColor=6366F1" alt="Quality" />
+    <img src="https://img.shields.io/badge/HQ-Sri_Lanka-F5F3FF?style=flat-square&logo=googlemaps&logoColor=7C3AED&labelColor=EDE9FE" alt="Sri Lanka" />
+    <img src="https://img.shields.io/badge/Architecture-Full--Stack_%26_Cloud-EFF6FF?style=flat-square&logo=databricks&logoColor=2563EB&labelColor=DBEAFE" alt="Architecture" />
+    <img src="https://img.shields.io/badge/Standard-Enterprise_Quality-EEF2FF?style=flat-square&logo=shield&logoColor=4F46E5&labelColor=E0E7FF" alt="Quality" />
   </p>
 </div>
 
 ---
 
-### 🚀 Who We Are
-
-**Quantimite** brings together **software engineering, product design, and digital growth**. We turn business ideas into purposeful, reliable, and user-friendly digital experiences—and ensure those experiences reach the audiences they are built for.
-
-> *"Thoughtful engineering, careful execution, and dependable work—built around real people and engineered to scale."*
-
----
-
-### ⚡ What We Engineer
+### Four Pillars. One Team That Ships.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4>01 | Software Development & Engineering</h4>
-      <p>Digital products that simplify workflows and build a strong foundation for scale.</p>
+      <p>
+        <img src="../assets/icon-code.svg" width="20" height="20" align="absmiddle" />
+        &nbsp;<b>Software Engineering &amp; Architecture</b>
+      </p>
+      <p>Cloud-native applications, robust backend services, and scalable platforms built for long-term reliability.</p>
       <ul>
-        <li><b>Web & Mobile Apps:</b> Full-stack web & cross-platform mobile solutions</li>
-        <li><b>Enterprise & SaaS:</b> CRMs, ERPs, POS systems, internal tools & startup MVPs</li>
-        <li><b>UI/UX & Product Design:</b> Wireframes, design systems & high-fidelity prototypes</li>
-        <li><b>APIs & Cloud DevOps:</b> REST/GraphQL, Docker, CI/CD & performance tuning</li>
+        <li><b>Custom Web &amp; Mobile:</b> Full-stack applications &amp; cross-platform experiences</li>
+        <li><b>Enterprise &amp; SaaS:</b> CRMs, ERPs, POS platforms &amp; startup MVPs</li>
+        <li><b>API &amp; Cloud Infrastructure:</b> REST/GraphQL, Docker, CI/CD &amp; security audits</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4>02 | Digital Marketing & Growth Engineering</h4>
-      <p>Connecting great products with the right audience from first click to conversion.</p>
+      <p>
+        <img src="../assets/icon-design.svg" width="20" height="20" align="absmiddle" />
+        &nbsp;<b>UI/UX &amp; Brand Identity Design</b>
+      </p>
+      <p>Intuitive, high-converting interfaces and cohesive visual systems crafted with precision.</p>
       <ul>
-        <li><b>Performance Media:</b> Meta, Google & LinkedIn campaigns + CRO</li>
-        <li><b>Technical & Local SEO:</b> Search visibility, site speed & content foundations</li>
-        <li><b>Brand & Motion:</b> Visual identity, brand guidelines & motion graphics</li>
-        <li><b>Marketing Automation:</b> Lead nurturing, email flows & funnel architecture</li>
+        <li><b>Design Systems:</b> Reusable component libraries &amp; tokens</li>
+        <li><b>Product Prototyping:</b> Wireframes, interactive flows &amp; usability testing</li>
+        <li><b>Brand &amp; Motion:</b> Visual identity, guidelines &amp; motion graphics</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p>
+        <img src="../assets/icon-growth.svg" width="20" height="20" align="absmiddle" />
+        &nbsp;<b>Digital Growth &amp; Performance</b>
+      </p>
+      <p>Data-backed acquisition, technical search visibility, and conversion engineering.</p>
+      <ul>
+        <li><b>Paid Acquisition:</b> Meta, Google &amp; LinkedIn performance campaigns</li>
+        <li><b>Technical SEO:</b> Core Web Vitals, site architecture &amp; discoverability</li>
+        <li><b>Lifecycle Automation:</b> Lead nurturing, email sequences &amp; funnels</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <p>
+        <img src="../assets/icon-ai.svg" width="20" height="20" align="absmiddle" />
+        &nbsp;<b>AI &amp; Intelligent Automation</b>
+      </p>
+      <p>Applied machine learning, autonomous agents, and workflow automation integrated into daily operations.</p>
+      <ul>
+        <li><b>Custom AI Agents:</b> Domain-trained copilots &amp; RAG pipelines</li>
+        <li><b>Workflow Automation:</b> Intelligent document &amp; operational routing</li>
+        <li><b>Predictive Analytics:</b> Data modeling &amp; decision-support systems</li>
       </ul>
     </td>
   </tr>
@@ -59,25 +73,44 @@
 
 ---
 
-### 🛠️ Core Stack & Ecosystem
+### Why Partner With Quantimite
 
-<div align="center">
-  <img src="https://img.shields.io/badge/TypeScript-0F172A?style=flat-square&logo=typescript&logoColor=3178C6" />
-  <img src="https://img.shields.io/badge/React_19-0F172A?style=flat-square&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Next.js-0F172A?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
-  <img src="https://img.shields.io/badge/Node.js-0F172A?style=flat-square&logo=nodedotjs&logoColor=339933" />
-  <img src="https://img.shields.io/badge/ASP.NET_Core-0F172A?style=flat-square&logo=dotnet&logoColor=512BD4" />
-  <img src="https://img.shields.io/badge/Spring_Boot-0F172A?style=flat-square&logo=springboot&logoColor=6DB33F" />
-  <img src="https://img.shields.io/badge/PostgreSQL-0F172A?style=flat-square&logo=postgresql&logoColor=4169E1" />
-  <img src="https://img.shields.io/badge/Docker-0F172A?style=flat-square&logo=docker&logoColor=2496ED" />
-  <img src="https://img.shields.io/badge/Figma-0F172A?style=flat-square&logo=figma&logoColor=F24E1E" />
-</div>
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <b>01 &mdash; Full-Stack Precision</b><br/>
+      <sub>End-to-end ownership from system architecture and interface design to cloud deployment.</sub>
+    </td>
+    <td width="33%" valign="top">
+      <b>02 &mdash; Enterprise Quality</b><br/>
+      <sub>Rigorous code reviews, clean TypeScript/C#/Java foundations, and maintainable architecture.</sub>
+    </td>
+    <td width="33%" valign="top">
+      <b>03 &mdash; Designed to Feel Premium</b><br/>
+      <sub>Thoughtful typography, subtle motion, and uncluttered user journeys that build trust.</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 🧭 How We Work
+### Core Technology Ecosystem
 
-```text
-  [ 01. UNDERSTAND ]  ──▶  [ 02. PLAN ]  ──▶  [ 03. CREATE ]  ──▶  [ 04. IMPROVE ]
-   Business & Problem       Priorities &       Design & Build       Test, Refine &
-       Discovery              Roadmap             with Care           Scale Growth
+<div align="center">
+  <img src="https://img.shields.io/badge/TypeScript-F8FAFC?style=flat-square&logo=typescript&logoColor=3178C6" />
+  <img src="https://img.shields.io/badge/React_19-F8FAFC?style=flat-square&logo=react&logoColor=0284C7" />
+  <img src="https://img.shields.io/badge/Next.js-F8FAFC?style=flat-square&logo=nextdotjs&logoColor=0F172A" />
+  <img src="https://img.shields.io/badge/Node.js-F8FAFC?style=flat-square&logo=nodedotjs&logoColor=16A34A" />
+  <img src="https://img.shields.io/badge/ASP.NET_Core-F8FAFC?style=flat-square&logo=dotnet&logoColor=512BD4" />
+  <img src="https://img.shields.io/badge/Spring_Boot-F8FAFC?style=flat-square&logo=springboot&logoColor=6DB33F" />
+  <img src="https://img.shields.io/badge/Python_%26_PyTorch-F8FAFC?style=flat-square&logo=pytorch&logoColor=EE4C2C" />
+  <img src="https://img.shields.io/badge/PostgreSQL-F8FAFC?style=flat-square&logo=postgresql&logoColor=336791" />
+  <img src="https://img.shields.io/badge/Docker-F8FAFC?style=flat-square&logo=docker&logoColor=2496ED" />
+  <img src="https://img.shields.io/badge/Figma-F8FAFC?style=flat-square&logo=figma&logoColor=F24E1E" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="../assets/cta-banner.svg" alt="Architecting the digital frontier." width="100%" />
+</div>
