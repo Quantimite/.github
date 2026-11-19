@@ -1,100 +1,129 @@
-﻿<svg width="100%" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+﻿<svg width="100%" height="270" viewBox="0 0 1200 270" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <!-- Website Light Lavender-White Surface -->
-    <linearGradient id="heroSurface" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F5F2FF"/>
-      <stop offset="55%" stop-color="#FAF9FF"/>
+    <!-- Light Lavender-to-White Website Surface -->
+    <linearGradient id="bgSurface" x1="0" y1="0" x2="1200" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F6F3FF"/>
+      <stop offset="50%" stop-color="#FAF9FF"/>
       <stop offset="100%" stop-color="#EEF2FF"/>
     </linearGradient>
 
     <!-- Quantimite Signature Purple -> Blue Gradient -->
-    <linearGradient id="quantimiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#9333EA"/>
       <stop offset="50%" stop-color="#6366F1"/>
       <stop offset="100%" stop-color="#3B82F6"/>
     </linearGradient>
 
-    <!-- Subtle Ambient Glow -->
-    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.14"/>
+    <!-- Ambient Radial Glow Behind Mascot -->
+    <radialGradient id="mascotGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.18"/>
+      <stop offset="65%" stop-color="#6366F1" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Architectural Micro-Grid -->
-    <pattern id="archGrid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1D0B3B" stroke-opacity="0.04" stroke-width="1"/>
+    <!-- Subtle Architectural Grid -->
+    <pattern id="techGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1D0B3B" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
+
+    <!-- Circular Clip for Mascot Integration -->
+    <clipPath id="mascotClip">
+      <circle cx="1015" cy="138" r="106"/>
+    </clipPath>
   </defs>
 
   <style>
-    .orbit-spin {
-      transform-origin: 960px 130px;
-      animation: spinSlow 24s linear infinite;
+    .spin-cw {
+      transform-origin: 1015px 138px;
+      animation: rotateCW 26s linear infinite;
     }
-    .orbit-reverse {
-      transform-origin: 960px 130px;
-      animation: spinReverse 18s linear infinite;
+    .spin-ccw {
+      transform-origin: 1015px 138px;
+      animation: rotateCCW 18s linear infinite;
     }
-    .signal-flow {
-      stroke-dasharray: 180;
-      stroke-dashoffset: 180;
-      animation: flowLine 3s ease-in-out infinite alternate;
+    .radar-spin {
+      transform-origin: 675px 135px;
+      animation: rotateCW 20s linear infinite;
     }
-    .float-emblem {
-      animation: floatY 4.5s ease-in-out infinite;
+    .pulse-line {
+      stroke-dasharray: 210;
+      stroke-dashoffset: 210;
+      animation: drawLine 3.2s ease-in-out infinite alternate;
     }
-    @keyframes spinSlow {
+    .float-mascot {
+      animation: gentleFloat 4s ease-in-out infinite;
+    }
+    @keyframes rotateCW {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-    @keyframes spinReverse {
+    @keyframes rotateCCW {
       from { transform: rotate(360deg); }
       to { transform: rotate(0deg); }
     }
-    @keyframes flowLine {
+    @keyframes drawLine {
       to { stroke-dashoffset: 0; }
     }
-    @keyframes floatY {
+    @keyframes gentleFloat {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-5px); }
+      50% { transform: translateY(-4px); }
     }
   </style>
 
-  <!-- Base Card -->
-  <rect width="1200" height="260" rx="14" fill="url(#heroSurface)"/>
-  <rect width="1200" height="260" rx="14" fill="url(#archGrid)"/>
-  <rect x="0.5" y="0.5" width="1199" height="259" rx="13.5" stroke="#E2D9F3" stroke-width="1"/>
+  <!-- Main Card Surface -->
+  <rect width="1200" height="270" rx="14" fill="url(#bgSurface)"/>
+  <rect width="1200" height="270" rx="14" fill="url(#techGrid)"/>
+  <rect x="0.5" y="0.5" width="1199" height="269" rx="13.5" stroke="#DDD6FE" stroke-width="1"/>
 
-  <!-- Top Gradient Accent Bar -->
-  <path d="M 14 0 L 1186 0" stroke="url(#quantimiteGrad)" stroke-width="4"/>
+  <!-- Top Brand Accent Strip -->
+  <path d="M 14 0 L 1186 0" stroke="url(#brandGrad)" stroke-width="3.5"/>
 
-  <!-- Ambient Right Orb -->
-  <circle cx="960" cy="130" r="150" fill="url(#orbGlow)"/>
+  <!-- Subtle Circuit Trace Lines -->
+  <path class="pulse-line" d="M 0 195 L 44 195 L 62 212 L 130 212" stroke="#9333EA" stroke-opacity="0.28" stroke-width="1.5"/>
+  <path class="pulse-line" d="M 555 135 L 625 135" stroke="#6366F1" stroke-opacity="0.3" stroke-width="1.5"/>
+  <path class="pulse-line" d="M 725 110 L 820 110 L 845 85 L 900 85" stroke="#3B82F6" stroke-opacity="0.28" stroke-width="1.5"/>
 
-  <!-- Animated Architectural Telemetry Rings (Right Side) -->
-  <g opacity="0.85">
-    <circle class="orbit-spin" cx="960" cy="130" r="88" stroke="url(#quantimiteGrad)" stroke-width="1.5" stroke-dasharray="12 8 4 8"/>
-    <circle class="orbit-reverse" cx="960" cy="130" r="64" stroke="#6366F1" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="28 14"/>
-    
-    <!-- Center Quantimite Q-Arrow Mark -->
-    <g class="float-emblem" transform="translate(922, 92)">
-      <path d="M38 10 C20 10 6 24 6 42 C6 60 20 74 38 74 C47 74 55 70 61 64 L76 49 M60 49 L76 49 L76 65" stroke="url(#quantimiteGrad)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M38 21 C26 21 17 30 17 42 C17 54 26 63 38 63 C44 63 49 61 53 57 L68 42" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
-    </g>
+  <!-- Center Telemetry HUD Graphic -->
+  <g opacity="0.7">
+    <circle cx="675" cy="135" r="56" stroke="#CBD5E1" stroke-width="1"/>
+    <circle class="radar-spin" cx="675" cy="135" r="44" stroke="url(#brandGrad)" stroke-width="2" stroke-dasharray="22 12 6 12"/>
+    <circle cx="675" cy="135" r="28" stroke="#9333EA" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="675" cy="135" r="10" fill="url(#brandGrad)" fill-opacity="0.2"/>
   </g>
 
-  <!-- Animated Signal Connector -->
-  <path class="signal-flow" d="M 64 218 L 280 218 L 305 198 L 520 198" stroke="url(#quantimiteGrad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- PROFESSIONAL LOGO LOCKUP (Icon + QUANTIMITE Wordmark) -->
+  <g transform="translate(56, 28)">
+    <!-- Quantimite Q-Arrow Emblem -->
+    <path d="M21 5 C11 5 3 13 3 23 C3 33 11 41 21 41 C26 41 30.5 39 34 35.5 L43 26.5 M33.5 26.5 L43 26.5 L43 36" stroke="url(#brandGrad)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 11.5 C14.5 11.5 9.5 16.5 9.5 23 C9.5 29.5 14.5 34.5 21 34.5 C24.5 34.5 27.5 33 29.8 30.8 L38.5 22" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Top Eyebrow Pill -->
-  <rect x="64" y="34" width="218" height="26" rx="13" fill="#EDE9FE" stroke="#DDD6FE" stroke-width="1"/>
-  <circle cx="80" cy="47" r="4" fill="#9333EA"/>
-  <text x="92" y="51" fill="#5B21B6" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">QUANTIMITE ENGINEERING</text>
+    <!-- QUANTIMITE Brand Name -->
+    <text x="55" y="29" fill="url(#brandGrad)" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="2.5">QUANTIMITE</text>
 
-  <!-- Main Headline Matching Website -->
-  <text x="64" y="114" fill="#1D0B3B" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">We engineer your</text>
-  <text x="64" y="162" fill="url(#quantimiteGrad)" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">next move.</text>
+    <!-- Subtle Vertical Divider & Engineering Tag -->
+    <line x1="232" y1="10" x2="232" y2="34" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="246" y="10" width="128" height="24" rx="12" fill="#EDE9FE" stroke="#DDD6FE" stroke-width="1"/>
+    <circle cx="260" cy="22" r="3.5" fill="#9333EA"/>
+    <text x="270" y="26" fill="#5B21B6" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">ENGINEERING</text>
+  </g>
 
-  <!-- Subtitle Breadcrumb -->
-  <text x="64" y="196" fill="#64748B" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" letter-spacing="0.5">Software Architecture  •  UI/UX Design  •  Digital Growth  •  AI Systems</text>
+  <!-- HERO HEADLINE -->
+  <text x="56" y="132" fill="#1D0B3B" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.6">We engineer your</text>
+  <text x="56" y="180" fill="url(#brandGrad)" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.6">next move.</text>
+
+  <!-- PILLARS SUBTITLE -->
+  <text x="56" y="214" fill="#475569" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" letter-spacing="0.4">Software Architecture  •  UI/UX Design  •  Digital Growth  •  AI Systems</text>
+
+  <!-- Animated Bottom Gradient Accent Bar -->
+  <rect x="56" y="232" width="180" height="3.5" rx="1.75" fill="url(#brandGrad)"/>
+
+  <!-- RIGHT SIDE: MASCOT + ORBITAL HUD RINGS -->
+  <circle cx="1015" cy="138" r="126" fill="url(#mascotGlow)"/>
+  <circle class="spin-cw" cx="1015" cy="138" r="116" stroke="url(#brandGrad)" stroke-width="1.6" stroke-dasharray="14 8 4 8"/>
+  <circle class="spin-ccw" cx="1015" cy="138" r="106" stroke="#818CF8" stroke-opacity="0.55" stroke-width="1.2" stroke-dasharray="26 12"/>
+
+  <!-- Embedded Mascot Image (Rendered inside assets/mascot.png) -->
+  <g class="float-mascot" clip-path="url(#mascotClip)">
+    <image href="./mascot.png" x="905" y="28" width="220" height="225" preserveAspectRatio="xMidYMid slice"/>
+  </g>
 </svg>
