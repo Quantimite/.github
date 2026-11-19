@@ -1,5 +1,5 @@
 ﻿<div align="center">
-  <img src="../assets/hero-banner.svg" alt="Quantimite — We engineer your next move." width="100%" />
+  <img src="../assets/hero-banner.svg?v=3" alt="Quantimite — We engineer your next move." width="100%" />
 
   <br/><br/>
 
@@ -114,3 +114,4 @@
 <div align="center">
   <img src="../assets/cta-banner.svg" alt="Architecting the digital frontier." width="100%" />
 </div>
+
